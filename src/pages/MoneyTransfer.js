@@ -1,6 +1,6 @@
 import { React, useEffect, useState } from 'react';
 
-const base_url = 'http://localhost:8090';
+const base_url = 'http://localhost:9002';
 
 const MoneyTransfer = () =>{
 
@@ -69,7 +69,7 @@ const MoneyTransfer = () =>{
 
         console.log(formData);
 
-        fetch(`${base_url}/insertTransactions`, {method: "POST",
+        fetch(`${base_url}/insertNeftTransactions`, {method: "POST",
         headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
@@ -81,7 +81,7 @@ const MoneyTransfer = () =>{
     }
 
     useEffect(()=>{
-        fetch('http://localhost:8090/getAllTransactions')
+        fetch('http://localhost:9002/getAllNeftTransactions')
         .then(res => res.json())
         .then(res => console.log(res))
     }, [])
