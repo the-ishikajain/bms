@@ -1,5 +1,6 @@
 import { React, useEffect, useState } from 'react';
 import LastTransactionPanel from '../components/LastTransactionPanel';
+import Banner from '../components/Banner';
 import Navbar from '../components/Navbar';
 import Panel from '../components/Panel';
 import Services from '../components/Services';
@@ -19,6 +20,7 @@ const Home = () =>{
         <div className='home'>
         <Navbar userName={'Testuser'}/>
         <Panel/>
+      
         <Services/>
         </div>
     );
