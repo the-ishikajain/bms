@@ -7,21 +7,20 @@ import Services from '../components/Services';
 
 const Home = () =>{
 
-    const [transactions, setTransactions] = useState([]);
-
-
-    useEffect(()=>{
-        fetch('http://localhost:8090/getAllTransactions')
-        .then(res => res.json())
-        .then(res => setTransactions(res));
-    }, []);
-
     return (
         <div className='home'>
-        <Navbar userName={'Testuser'}/>
-        <Panel/>
-      
-        <Services/>
+         <Navbar userName={'Testuser'}/>
+            <div className='container-fluid'>
+                <div className='row bg-info'>
+                    <div className='col col-lg-6 col-12 lefthalf bg-info'>
+                        div1
+                     </div>
+                    <div className='col col-lg-6 col-12 righthalf bg-secondary'>
+                        div2 
+                        <button className='btn btn-primary'>button</button>
+                    </div>
+                </div>
+           </div>
         </div>
     );
 }
