@@ -185,8 +185,8 @@ const About = () =>{
         <SwiperSlide>
         <section className='container membersection'>
                 <div className='card membercard'>
-                    <div className='image'>
-                    <img src={require('../images/img8.jpg')} alt=""/>
+                    <div className='image'><img src={require('../images/img8.jpg')} alt=""/>
+                    
                     </div> 
                     <h2>John Doe 9</h2>   
                     <p>Deputy Managing Director</p>
