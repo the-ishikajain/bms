@@ -4,6 +4,8 @@ import Banner from '../components/Banner';
 import Navbar from '../components/Navbar';
 import Panel from '../components/Panel';
 import Services from '../components/Services';
+import Footer from '../components/Footer';
+
 
 const Dashboard = () =>{
     const [transactions, setTransactions] = useState([]);
@@ -20,6 +22,7 @@ const Dashboard = () =>{
         <Panel/>
       
         <Services/>
+        
         </div>
     );
 }

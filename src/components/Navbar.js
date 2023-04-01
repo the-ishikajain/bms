@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 
 const Navbar = ({userName, loggedIn}) =>{
     return (
@@ -5,9 +6,11 @@ const Navbar = ({userName, loggedIn}) =>{
         <div className="container-fluid nav-bg">
             <div className="row">
                 <div className="col-12 mx-auto">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <nav class="navbar navbar-expand-lg navbar-dark" style={{'backgroundColor':'#146C94'}}>
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <NavLink class="navbar-brand" href="#">
+    <img src={require('../images/wissenlogo1.png')} className='navlogo' alt='logotext'/>
+    </NavLink>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
