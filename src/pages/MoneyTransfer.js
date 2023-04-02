@@ -94,7 +94,15 @@ const MoneyTransfer = () =>{
             <h1>Money Transfer</h1>
             <br></br>
             <form onSubmit={handleSubmit}>
-            
+
+            <div className="input-wrapper">
+            <select required onChange={handleChange}>
+            <option value="1">Neft</option>
+            <option value="2">Rtgs</option>
+            </select>
+            <label htmlFor="user">Select Transaction Type</label>
+            </div>
+
             <div className="input-wrapper">
             <select name="senderAccountNo" value={formData['senderAccountNo']} required onChange={handleChange}>
                 <option>Select</option>

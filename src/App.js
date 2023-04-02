@@ -15,7 +15,7 @@ import MoneyTransfer from "./pages/MoneyTransfer";
 import Dashboard from "./pages/Dashboard";
 import ServicesPage from "./pages/ServicesPage";
 import TransactionHistory from "./pages/TransactionHistory";
-import CreateAccount from "./pages/CreateAccount";
+import AccountView from "./pages/AccountView";
 function App() {
   return (
     <div className="app">
@@ -27,7 +27,7 @@ function App() {
           <Route path="/moneyTransfer" element={<MoneyTransfer/>}/>
           <Route path="/transactionHistory" element={<TransactionHistory/>}/>
           <Route path="/servicesPage" element={<ServicesPage/>}/>
-          <Route path="/createAccount" element={<CreateAccount/>}/>
+          <Route path="/AccountView" element={<AccountView/>}/>
         </Routes>
       </BrowserRouter>
     </div>

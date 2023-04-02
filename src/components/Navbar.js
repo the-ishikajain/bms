@@ -23,9 +23,6 @@ const Navbar = ({userName, loggedIn}) =>{
           <a class="nav-link" href="#">Profile</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="ServicesPage">Services</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link" href="About">About Us</a>
         </li>
         <li class="nav-item">

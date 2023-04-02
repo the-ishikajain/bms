@@ -45,7 +45,7 @@ const ServicesPage = () =>{
           <li> Monthly Amount : 2,000 &#8377;</li>
          </ul>
          <div className="btn">
-         <button className='btn  knowmorebtn'>Buy</button>
+          <button className='btn  knowmorebtn'>Buy</button> 
          </div>
       </div>
     </div>
@@ -63,7 +63,7 @@ const ServicesPage = () =>{
           <li> Monthly Amount : 1,250 &#8377;</li>
          </ul>
          <div className="btn">
-         <button className='btn  knowmorebtn'>Buy</button>
+         <button className='btn  knowmorebtn'>Buy</button> 
          </div>
       </div>
     </div>
