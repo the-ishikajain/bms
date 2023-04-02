@@ -1,6 +1,8 @@
 import { React, useEffect, useState } from 'react';
+import Footer from '../components/Footer';
+import Navbar from '../components/Navbar';
 
-const base_url = 'http://localhost:8090';
+const base_url = 'http://localhost:9002';
 
 const MoneyTransfer = () =>{
 
@@ -69,7 +71,7 @@ const MoneyTransfer = () =>{
 
         console.log(formData);
 
-        fetch(`${base_url}/insertTransactions`, {method: "POST",
+        fetch(`${base_url}/insertNeftTransactions`, {method: "POST",
         headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
@@ -81,12 +83,14 @@ const MoneyTransfer = () =>{
     }
 
     useEffect(()=>{
-        fetch('http://localhost:8090/getAllTransactions')
+        fetch('http://localhost:9002/getAllNeftTransactions')
         .then(res => res.json())
         .then(res => console.log(res))
     }, [])
     return (
+        
         <div className='money-transfer'>
+            <Navbar/>
             <h1>Money Transfer</h1>
             <br></br>
             <form onSubmit={handleSubmit}>
@@ -125,6 +129,7 @@ const MoneyTransfer = () =>{
                 <button type="submit" className='submit-btn'>Submit</button>
             </div>
             </form>
+            <Footer/>
         </div>
     );
 }
