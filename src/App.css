@@ -196,6 +196,11 @@ text-align: center;
 
 
 }
+.BannerHeading
+{
+  font-weight: bold;
+  font-size: 50px;
+}
 .leftcol{
   display: flex;
   flex-direction: column;
@@ -533,4 +538,24 @@ border-top:5px solid #146C94;
 {
     padding: 15px;
 }
-  
+.serv
+{
+display : flex;
+flex-direction: column;
+}
+.services
+{
+background-color:#19a7ceb7; 
+}
+.headline
+{
+  text-align: center;
+  color : white;
+  font-weight: bold;
+  font-size: 50px;
+}
+.col
+{
+  padding-left : 1.5%;
+  padding-right: 1.5%;
+}

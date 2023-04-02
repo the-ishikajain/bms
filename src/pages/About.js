@@ -50,9 +50,8 @@ const About = () =>{
                     <div class="card-body">
                         <h5 class="card-title">Who we are</h5>
                         <p class="card-text">Wissen Bank is one of India’s leading private banks and was among the first to receive approval from the Reserve Bank of India (RBI) to set up a private sector bank in 1994.
-                            Today, Wissen Bank has a banking network of 6,499 branches and 18,868 ATM's in 3,226 cities/towns.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
-                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                            Today, Wissen Bank has a banking network of 6,499 branches and 18,868 ATM's in 3,226 cities/towns.Wissen Bank operates in a highly automated environment powered by information technology and communication systems. All branches have online connectivity which enables speedy funds transfer for customers. Multi-branch access is also provided to retail customers through the branch network and Automated Teller Machines (ATMs).
+We have made substantial efforts and investments in acquiring the best technology available internationally to build the infrastructure for a world class bank.
                         </p>
                         {/* <a href="#" class="btn btn-primary">Go somewhere</a> */}
                     </div>
@@ -93,7 +92,7 @@ const About = () =>{
                     <div className='image'>
                     <img src={require('../images/img3.jpeg')} alt=""/>
                     </div> 
-                    <h2>John Doe 1</h2>   
+                    <h2>Joy Birla</h2>   
                     <p>Chairman</p>
                 </div>
                 
@@ -105,7 +104,7 @@ const About = () =>{
                     <div className='image'>
                     <img src={require('../images/img2.jpg')} alt=""/>
                     </div> 
-                    <h2>John Doe 2</h2>   
+                    <h2>John Doe</h2>   
                     <p>Chief Executive Officer</p>
                 </div>
                 
@@ -117,7 +116,7 @@ const About = () =>{
                     <div className='image'>
                     <img src={require('../images/images1.jpg')} alt=""/>
                     </div> 
-                    <h2>John Doe 3</h2>   
+                    <h2>Aman Roy</h2>   
                     <p>Independent Director</p>
                 </div>
                 
@@ -129,7 +128,7 @@ const About = () =>{
                     <div className='image'>
                     <img src={require('../images/img4.jpg')} alt=""/>
                     </div> 
-                    <h2>John Doe 4</h2>   
+                    <h2>Jay Shetty</h2>   
                     <p>Independent Director</p>
                 </div>
                 
@@ -141,7 +140,7 @@ const About = () =>{
                     <div className='image'>
                     <img src={require('../images/img5.jpg')} alt=""/>
                     </div> 
-                    <h2>John Doe 5</h2>   
+                    <h2>Alia Roy</h2>   
                     <p>Non Executive Director</p>
                 </div>
                 
@@ -153,7 +152,7 @@ const About = () =>{
                     <div className='image'>
                     <img src={require('../images/img6.jpg')} alt=""/>
                     </div> 
-                    <h2>John Doe 6</h2>   
+                    <h2>Riya Garg</h2>   
                     <p>Independent Director</p>
                 </div>
                 
@@ -165,7 +164,7 @@ const About = () =>{
                     <div className='image'>
                     <img src={require('../images/img7.jpg')} alt=""/>
                     </div> 
-                    <h2>John Doe 7</h2>   
+                    <h2>Elon Musk</h2>   
                     <p>Independent Director</p>
                 </div>
                 
@@ -177,7 +176,7 @@ const About = () =>{
                     <div className='image'>
                     <img src={require('../images/img9.jpg')} alt=""/>
                     </div> 
-                    <h2>John Doe 8</h2>   
+                    <h2>Luna Sun</h2>   
                     <p>Non Executive Director</p>
                 </div>
                 
@@ -189,7 +188,7 @@ const About = () =>{
                     <div className='image'><img src={require('../images/img8.jpg')} alt=""/>
                     
                     </div> 
-                    <h2>John Doe 9</h2>   
+                    <h2>Dawn Joy</h2>   
                     <p>Deputy Managing Director</p>
                 </div>
                 
@@ -205,10 +204,9 @@ const About = () =>{
             <div class="row row-cols-1 row-cols-md-3 g-4">
   <div class="col">
     <div class="card ">
-    <img src={require('../images/bankphoto.webp')} className="card-img-top" alt=""/>
+    <img src={require('../images/bank1.jpg')} className="card-img-top" alt="" height="265px"/>
       <div class="card-body">
         <h5 class="card-title">Wissen Bank in India</h5>
-        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
       </div>
     </div>
   </div>
@@ -217,7 +215,6 @@ const About = () =>{
     <img src={require('../images/media.jpeg')} className="card-img-top" alt=""/>
       <div class="card-body">
         <h5 class="card-title">News and Media</h5>
-        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
       </div>
     </div>
   </div>
@@ -226,7 +223,6 @@ const About = () =>{
     <img src={require('../images/handshake.jpg')} className="card-img-top" alt=""/>
       <div class="card-body">
         <h5 class="card-title">Investor Relations</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
       </div>
     </div>
   </div>
@@ -235,7 +231,6 @@ const About = () =>{
     <img src={require('../images/careers.avif')} className="card-img-top" alt=""/>
       <div class="card-body">
         <h5 class="card-title">Careers</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
       </div>
     </div>
   </div>
@@ -244,7 +239,6 @@ const About = () =>{
     <img src={require('../images/diversity.jpg')} className="card-img-top" alt=""/>
       <div class="card-body">
         <h5 class="card-title">Inclusive</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
       </div>
     </div>
   </div>
@@ -253,7 +247,6 @@ const About = () =>{
     <img src={require('../images/purpose.jpg')} className="card-img-top" alt=""/>
       <div class="card-body">
         <h5 class="card-title">Purpose and Values</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
       </div>
     </div>
   </div>

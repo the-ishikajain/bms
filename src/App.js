@@ -13,7 +13,9 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import MoneyTransfer from "./pages/MoneyTransfer";
 import Dashboard from "./pages/Dashboard";
+import ServicesPage from "./pages/ServicesPage";
 import TransactionHistory from "./pages/TransactionHistory";
+import CreateAccount from "./pages/CreateAccount";
 function App() {
   return (
     <div className="app">
@@ -24,6 +26,8 @@ function App() {
           <Route path="/about" element={<About/>}/>
           <Route path="/moneyTransfer" element={<MoneyTransfer/>}/>
           <Route path="/transactionHistory" element={<TransactionHistory/>}/>
+          <Route path="/servicesPage" element={<ServicesPage/>}/>
+          <Route path="/createAccount" element={<CreateAccount/>}/>
         </Routes>
       </BrowserRouter>
     </div>
