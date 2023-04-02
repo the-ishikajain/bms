@@ -19,10 +19,15 @@ const Dashboard = () =>{
     return (
         <div className='home'>
         <Navbar userName={'Testuser'}/>
+        <br></br>
+        <br></br>
         <Panel/>
-      
+        <br></br>
+        <br></br>
         <Services/>
-        
+        <br></br>
+        <br></br>
+        <Footer/>
         </div>
     );
 }

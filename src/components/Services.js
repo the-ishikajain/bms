@@ -6,11 +6,12 @@ import {TbPigMoney} from 'react-icons/tb';
 import {TbCalendarTime} from 'react-icons/tb'
 import {FiArrowRightCircle} from 'react-icons/fi';
 import { IconContext } from 'react-icons';
+import { NavLink } from 'react-router-dom';
 const Services = () =>{
     return(
         <IconContext.Provider value={{color:'#146C94',size:'2rem'}}>
         <div className='container-fluid service-container'>
-            <h1>How can we help you today?</h1>
+            <h1 className='dasheading px-5' style={{textAlign:'center',paddingTop:'1.2cm'}}>How can we help you today?</h1>
         <div class="row row-cols-1 row-cols-md-3 g-4 p-5 services">
             
   <div class="col">
@@ -20,7 +21,7 @@ const Services = () =>{
       <div class="card-body">
       <RiAccountCircleLine/>
         <h5 class="card-title">Create Account</h5>
-        <FiArrowRightCircle/>
+        <div className='nextarrow' style={{paddingLeft:'3.5cm'}}><NavLink><FiArrowRightCircle/></NavLink></div>
         {/* <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> */}
       </div>
     </div>
@@ -31,7 +32,7 @@ const Services = () =>{
       <div class="card-body">
         <FaRegListAlt/>
         <h5 class="card-title">Transaction History</h5>
-        <FiArrowRightCircle alignmentBaseline='right'/>
+        <div className='nextarrow' style={{paddingLeft:'2.5cm'}}><NavLink><FiArrowRightCircle/></NavLink></div>
         {/* <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> */}
       </div>
     </div>
@@ -41,8 +42,8 @@ const Services = () =>{
      
       <div class="card-body">
         <TbCalendarTime/>
-        <h5 class="card-title">Monthy Payment Details</h5>
-        <FiArrowRightCircle/>
+        <h5 class="card-title">Monthly Payment Details</h5>
+        <div className='nextarrow'style={{paddingLeft:'1.3cm'}}><NavLink><FiArrowRightCircle/></NavLink></div>
       </div>
     </div>
   </div>
@@ -52,7 +53,7 @@ const Services = () =>{
       <div class="card-body">
       <BsCashCoin/>
         <h5 class="card-title">Money Transfer</h5>
-        <FiArrowRightCircle/>
+        <div className='nextarrow'style={{paddingLeft:'3.35cm'}}><NavLink><FiArrowRightCircle/></NavLink></div>
         {/* <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p> */}
       </div>
     </div>
@@ -63,7 +64,7 @@ const Services = () =>{
       <div class="card-body">
         <TbPigMoney/>
         <h5 class="card-title">Buy Service</h5>
-        <FiArrowRightCircle/>
+        <div className='nextarrow' style={{paddingLeft:'4.3cm'}}><NavLink><FiArrowRightCircle/></NavLink></div>
         {/* <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p> */}
       </div>
     </div>
@@ -73,8 +74,8 @@ const Services = () =>{
      
       <div class="card-body">
         <MdOutlineNoAccounts/>
-        <h5 class="card-title">Block Net Banking</h5> 
-        <div className='nextarrow'><FiArrowRightCircle/></div>
+        <h5 class="card-title">Disable Net Banking</h5> 
+        <div className='nextarrow' style={{paddingLeft:'2.5cm'}}><NavLink><FiArrowRightCircle/></NavLink></div>
         
        
       </div>

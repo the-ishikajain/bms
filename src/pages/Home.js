@@ -99,8 +99,8 @@ const Home = () =>{
             {/* jumbotron */}
             <div className="jumbotron jumbotron-fluid happyBankingtext">
               <div class="container textcontainer">
-                <h1 class="display-4 pb-5">Happy Banking with US</h1>
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <h1 class=" pb-5 heading">Happy Banking With Us</h1>
+                <p class="lead">We at Wissen Bank aim to provide you easy and flexible solutions,so that you can touch the height of your goals and still climb higher.</p>
               </div>
             </div>
             <br></br><br></br><br></br>
@@ -290,8 +290,8 @@ const Home = () =>{
             <br></br><br></br><br></br>
             {/* Our Services */}
             <div className='my-5'>
-                <h1 className='text-center'>Our Services</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <h1 className='text-center sheading' style={{color:'#146C94', fontSize:'2cm'}}>Our Services</h1>
+                
             </div>
             <div className='container-fluid mb-5 p-5 servicecontainer'>
                 <div className='row'>
@@ -301,8 +301,8 @@ const Home = () =>{
                             <img src={require('../images/photo3.jpg')} className='card-img-top cardimg' alt="card img" />
                                 <div class="card-body">
                                     <h5 class="card-title">Life Insurance</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <NavLink href="#" class="btn btn-primary">Go somewhere</NavLink>
+                                    <p class="card-text">Wissen Bank Life Insurance Policies</p>
+                                    <NavLink to="#" class="servicelink"><button className='btn knowmorebtn'>Know More</button></NavLink>
                                 </div>
                             </div>    
                         </div>
@@ -313,8 +313,8 @@ const Home = () =>{
                              <img src={require('../images/photo1.jpg')} className='card-img-top cardimg' alt="card img" />
                                  <div class="card-body">
                                     <h5 class="card-title">Health Insurance</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <NavLink href="#" class="btn btn-primary">Go somewhere</NavLink>
+                                    <p class="card-text">Wissen Bank Health Insurance Policies</p>
+                                    <NavLink to="#" class="servicelink"><button className='btn  knowmorebtn'>Know More</button></NavLink>
                                 </div>
                             </div>    
                         </div>
@@ -325,8 +325,8 @@ const Home = () =>{
                          <img src={require('../images/vehicle.jpg')} className='card-img-top cardimg' alt="card img" />
                         <div class="card-body">
                           <h5 class="card-title">Vehicle Insurance</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <NavLink href="#" class="btn btn-primary">Go somewhere</NavLink>
+                            <p class="card-text">Wissen Bank Vehicle Insurance Policies</p>
+                          <NavLink to="#" class="servicelink"><button className='btn  knowmorebtn'>Know More</button></NavLink>
                       </div>
                     </div>    
                     </div>

@@ -13,7 +13,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import MoneyTransfer from "./pages/MoneyTransfer";
 import Dashboard from "./pages/Dashboard";
-
+import TransactionHistory from "./pages/TransactionHistory";
 function App() {
   return (
     <div className="app">
@@ -23,6 +23,7 @@ function App() {
           <Route path="/dashboard" element={<Dashboard/>}/>
           <Route path="/about" element={<About/>}/>
           <Route path="/moneyTransfer" element={<MoneyTransfer/>}/>
+          <Route path="/transactionHistory" element={<TransactionHistory/>}/>
         </Routes>
       </BrowserRouter>
     </div>

@@ -10,6 +10,7 @@ import { Keyboard,Scrollbar,Pagination, Navigation } from "swiper";
 
 import Images from '../components/Images';
 import {FaStar} from 'react-icons/fa';
+import Footer from '../components/Footer';
 
 const About = () =>{
     return (
@@ -262,7 +263,9 @@ const About = () =>{
 
 
 
-            
+            <br></br>
+            <br></br>
+            <Footer/>
         </div>
     );
 }
