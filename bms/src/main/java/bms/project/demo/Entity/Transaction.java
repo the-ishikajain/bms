@@ -22,7 +22,7 @@ public abstract class Transaction {
 	private int receiverAccountNo;
 	private double amount;          
 	private String transactionStatus;
-	private Date timestamp;
+	private String timestamp;
 	private String bankId;
 	public Boolean checkBalance(int senderAccountNo)
 	{
