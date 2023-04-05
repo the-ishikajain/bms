@@ -28,6 +28,7 @@ public class NeftTransactionServiceImplementation implements NeftTransactionServ
 		return neftRepository.findAllBySenderUserId(userId);
 	}
 	public void saveNeftTransaction(NeftTransaction transaction) throws Exception {
+		neftRepository.save(transaction);
 		ResponseEntity<AccountDto> senderAccountResponse = restTemplate
                 .getForEntity("http://localhost:8091/getAccount/" + transaction.getSenderAccountNo(),
                 AccountDto.class);
@@ -47,7 +48,6 @@ public class NeftTransactionServiceImplementation implements NeftTransactionServ
 		
 		restTemplate.put("http://localhost:8091/updateAccount", receiverAccount);
 		restTemplate.put("http://localhost:8091/updateAccount", senderAccount);
-		neftRepository.save(transaction);
 	}
 	public void deleteNeftTransaction(Long id) {
 		neftRepository.deleteById(id);

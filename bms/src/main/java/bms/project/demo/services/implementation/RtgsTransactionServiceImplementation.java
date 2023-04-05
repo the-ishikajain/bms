@@ -31,6 +31,7 @@ public class RtgsTransactionServiceImplementation implements RtgsTransactionServ
 	}
 	public void saveRtgsTransaction(RtgsTransaction transaction) {
 		try {
+			rtgsRepository.save(transaction);
 			ResponseEntity<AccountDto> senderAccountResponse = restTemplate
 	                .getForEntity("http://localhost:8091/getAccount/" + transaction.getSenderAccountNo(),
 	                AccountDto.class);
@@ -50,8 +51,6 @@ public class RtgsTransactionServiceImplementation implements RtgsTransactionServ
 			
 			restTemplate.put("http://localhost:8091/updateAccount", receiverAccount);
 			restTemplate.put("http://localhost:8091/updateAccount", senderAccount);
-			
-			rtgsRepository.save(transaction);
 		}
 		catch(Exception e) {
 			logger.info(e.toString());

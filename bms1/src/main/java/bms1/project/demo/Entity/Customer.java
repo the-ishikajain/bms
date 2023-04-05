@@ -21,8 +21,9 @@ import jakarta.persistence.Table;
 @Entity
 @Table(name="customer")
 public class Customer extends User {
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Id
-	private String customerId;
+	private Long customerId;
 	@Override
 	public Boolean verifyUser()
 	{

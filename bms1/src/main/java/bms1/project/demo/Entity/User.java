@@ -20,6 +20,7 @@ public abstract class User {
 	private String email;
 	private String gender;
 	private String address;  
-	private Date dob;
+	private String dob;
+	private String password;
 	public abstract Boolean verifyUser();
 }

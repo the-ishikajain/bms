@@ -2,6 +2,7 @@ package bms1.project.demo.controller;
 import java.util.List;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -30,6 +31,13 @@ public class UserController {
 	{
 		List<Employee> tranLst=empRepository.findAll();           //http://localhost:8080/getAllTransactions
 		return tranLst;
+	}
+	
+	@GetMapping (path="/getEmployee/{email}")
+	public Customer getEmployee(@PathVariable String email)
+	{
+		Customer obj=empRepository.findByEmail(email);           //http://localhost:8080/getAllTransactions
+		return obj;
 	}
 
 	@PostMapping (path="/insertEmployee")
@@ -80,13 +88,20 @@ public class UserController {
 		List<Customer> tranLst=cusRepository.findAll();           //http://localhost:8080/getAllTransactions
 		return tranLst;
 	}
+	
+	@GetMapping (path="/getCustomer/{email}")
+	public ResponseEntity<Customer> getCustomer(@PathVariable String email)
+	{
+		Customer obj=cusRepository.findByEmail(email);           //http://localhost:8080/getAllTransactions
+		return ResponseEntity.ok().body(obj);
+	}
 
 	@PostMapping (path="/insertCustomers")
 	public String insertCustomer(@RequestBody Customer tranobj)
 	{
 	System.out.println("Received Data : " +tranobj);
 	cusRepository.save(tranobj);
-	return "Record inserted successfuly";
+	return "{\"message\": \"Record inserted successfuly\"}";
 	}
 
 	@PutMapping (path="/updateCustomer")
@@ -107,11 +122,11 @@ public class UserController {
 			
 			
 		}
-		return "Unable to update record";
+		return "{\"message\": \"Record updated successfuly\"}";
 	}
 	
 	@DeleteMapping (path="/deleteCustomer/{id}")
-	public String deleteCustomer(@PathVariable String id)
+	public String deleteCustomer(@PathVariable Long id)
 	{
 		System.out.println("Given id is : " +id);
 		cusRepository.deleteById(id);
